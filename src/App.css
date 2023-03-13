@@ -1,3 +1,12 @@
+body {
+  background: linear-gradient(
+    122deg,
+    rgba(8, 175, 66, 1) 0%,
+    rgba(9, 9, 121, 1) 38%,
+    rgba(18, 167, 140, 1) 100%
+  );
+}
+
 .navbar a {
   color: #fff;
 }
@@ -30,4 +39,40 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn-container {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-container button {
+  margin: 8px;
+  border: 1px solid #3d9b44;
+  border-radius: 8px;
+  color: #ffff;
+  background-color: #06d613;
+  padding: 6px 27px;
+  font-weight: 700;
+  box-shadow: 2px 3px 3px #2c2a2a;
+}
+
+.btn-container button:hover {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+.btn-container button:active {
+  background-color: #1f9727;
+}
+
+.pages {
+  text-align: center;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #ffff;
+  text-decoration: u;
+  text-transform: uppercase;
 }
