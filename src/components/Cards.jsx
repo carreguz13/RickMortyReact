@@ -1,15 +1,17 @@
 import React from "react";
+import "../App.css";
 
 function Cards({ characters }) {
-  return (
-    <div>
-      <div className="caja1">
-        {characters.map((item) => (
-          <h2>{item.name}</h2>
-        ))}
+  return characters.map((item, index) => {
+    return (
+      <div key={index} className="card">
+        <img src={item.image} alt="" />
+        <p>{item.name}</p>
+        <p>{item.species}</p>
+        <p>{index}</p>
       </div>
-    </div>
-  );
+    );
+  });
 }
 
 export default Cards;

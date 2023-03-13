@@ -7,7 +7,7 @@ function App() {
   const [dataCharacters, setDataCharacters] = useState([]);
 
   const fetchCharacters = () => {
-    fetch("https://rickandmortyapi.com/api/character/1")
+    fetch("https://rickandmortyapi.com/api/character")
       .then((res) => res.json())
       .then((data) => setDataCharacters(data.results));
   };
@@ -19,7 +19,11 @@ function App() {
   return (
     <>
       <Navbar title="Rick And Morty App" />
-      <Cards characters={dataCharacters} />
+      <div className="centrar">
+        <div className="main-container">
+          <Cards characters={dataCharacters} />
+        </div>
+      </div>
     </>
   );
 }
