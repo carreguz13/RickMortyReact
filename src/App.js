@@ -37,7 +37,13 @@ function App() {
           <Cards characters={dataCharacters} />
         </div>
       </div>
-      <Buttons />
+      <p className="pages">Page {page} of 42</p>
+      <Buttons
+        next={info.next}
+        prev={info.prev}
+        setPage={setPage}
+        page={page}
+      />
     </>
   );
 }

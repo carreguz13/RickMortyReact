@@ -4,15 +4,6 @@ import "../App.css";
 function Buttons(props) {
   return (
     <div className="btn-container">
-      {props.next ? (
-        <button
-          onClick={() => {
-            props.setPage(props.page + 1);
-          }}
-        >
-          Next
-        </button>
-      ) : null}
       {props.prev ? (
         <button
           onClick={() => {
@@ -20,6 +11,16 @@ function Buttons(props) {
           }}
         >
           Previous
+        </button>
+      ) : null}
+
+      {props.next ? (
+        <button
+          onClick={() => {
+            props.setPage(props.page + 1);
+          }}
+        >
+          Next
         </button>
       ) : null}
     </div>

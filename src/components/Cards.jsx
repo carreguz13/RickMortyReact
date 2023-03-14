@@ -8,6 +8,7 @@ function Cards({ characters }) {
         <img src={item.image} alt="" />
         <p>{item.name}</p>
         <p>{item.species}</p>
+        <p>{item.origin.name}</p>
       </div>
     );
   });
